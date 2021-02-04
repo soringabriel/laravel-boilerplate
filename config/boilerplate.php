@@ -20,7 +20,7 @@ return [
                 'secret_key' => env('INVISIBLE_RECAPTCHA_SECRETKEY'),
                 'options'   => [
                     'hidden' => false,
-                    'location' => 'bottomright',
+                    'location' => env('INVISIBLE_RECAPTCHA_DATABADGE'),
                     'timeout' => 5,
                 ],
             ],
@@ -176,6 +176,7 @@ return [
             'no' => ['name' => 'Norwegian', 'rtl' => false],
             'pl' => ['name' => 'Polish', 'rtl' => false],
             'pt_BR' => ['name' => 'Brazilian Portuguese', 'rtl' => false],
+            'ro' => ['name' => 'Romana', 'rtl' => false],
             'ru' => ['name' => 'Russian', 'rtl' => false],
             'sv' => ['name' => 'Swedish', 'rtl' => false],
             'th' => ['name' => 'Thai', 'rtl' => false],
